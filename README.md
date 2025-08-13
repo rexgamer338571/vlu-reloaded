@@ -1,5 +1,7 @@
 # PvP Legacy Utils
 
+**This is a FORK of the [original mod](https://github.com/AndyRusso/pvplegacyutils) made by AndyRusso aimed at porting it to newer versions.**
+
 **This mod is NOT affiliated with [PvP Legacy](https://pvplegacy.net). Please do NOT ask them for support on this mod.**
 
 This is a mod that provides additional client-side features on the server [PvP Legacy](https://pvplegacy.net).
