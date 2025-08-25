@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "pvplegacyutils-1-21-4",
+  "version": "${version}",
+
+  "name": "PvP Legacy Utils for 1.21.4",
+  "description": "This mod is used to make PvP Legacy Utils work for 1.21.4+",
+  "authors": [
+    "Andy Russo",
+    "NG5M"
+  ],
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/pvplegacyutils-1-21-4/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "pvplegacyutils-versioned": [
+      "io.github.andyrusso.pvplegacyutils.versions.mc1_21_4.PvPLegacyUtilsVersioned"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "fabric": ">=0.119.4",
+    "minecraft": ">=1.21.4",
+    "java": ">=21"
+  },
+
+  "mixins": [
+    "pvplegacyutils-1-21-4.mixins.json"
+  ],
+
+  "accessWidener" : "pvplegacyutils-1-21-4.accesswidener",
+
+  "custom": {
+    "modmenu": {
+      "parent": "pvplegacyutils"
+    }
+  }
+}

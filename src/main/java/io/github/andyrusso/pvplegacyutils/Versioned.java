@@ -24,9 +24,9 @@ public class Versioned {
         // A hacky way to work around the Quilt Loader bug, it loads the 1.19 implementations on 1.19.3,
         // but not the other way around, so this should only use the 1.19.3 implementation if 2 are present.
         if (entryPoints.size() == 1) {
-            entryPoint = entryPoints.get(0);
+            entryPoint = entryPoints.getFirst();
         } else if (entryPoints.size() == 2) {
-            for (VersionedInterface entryPoint1: entryPoints) {
+            for (VersionedInterface entryPoint1 : entryPoints) {
                 if (Objects.equals(entryPoint1.getVersion(), "1.19.3")) {
                     entryPoint = entryPoint1;
                     break;
